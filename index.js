@@ -2,7 +2,7 @@ const params = {
     lines: [
         {
             background: '#CDCDCD',
-            updateTime: 10,
+            updateTime: 1000,
             elements: [
                 {
                     background: '#0022F',
@@ -20,7 +20,7 @@ const params = {
         },
         {
             background: '#CDCDCD',
-            updateTime: 100,
+            updateTime: 2000,
             elements: [
                 {
                     background: '#0022F',
@@ -46,259 +46,7 @@ const params = {
         },
         {
             background: '#CDCDCD',
-            updateTime: 700,
-            elements: [
-                {
-                    background: '#0022F',
-                    width: 25,
-                },
-                {
-                    background: '#11001F',
-                    width: 50,
-                },
-                {
-                    background: '#00GGFF',
-                    width: 25,
-                }
-            ]
-        },
-        {
-            background: '#000000',
-            updateTime: 900,
-            elements: [
-                {
-                    background: '#000000',
-                    width: 15,
-                },
-                {
-                    background: '#CDCDCD',
-                    width: 50,
-                },
-                {
-                    background: '#00F',
-                    width: 35,
-                }
-            ]
-        },
-        {
-            background: '#CDCDCD',
             updateTime: 1500,
-            elements: [
-                {
-                    background: '#0022F',
-                    width: 25,
-                },
-                {
-                    background: '#11001F',
-                    width: 50,
-                },
-                {
-                    background: '#00GGFF',
-                    width: 25,
-                }
-            ]
-        },
-        {
-            background: '#CDCDCD',
-            updateTime: 700,
-            elements: [
-                {
-                    background: '#0022F',
-                    width: 25,
-                },
-                {
-                    background: '#11001F',
-                    width: 50,
-                },
-                {
-                    background: '#00GGFF',
-                    width: 25,
-                }
-            ]
-        },
-        {
-            background: '#000000',
-            updateTime: 900,
-            elements: [
-                {
-                    background: '#000000',
-                    width: 15,
-                },
-                {
-                    background: '#CDCDCD',
-                    width: 50,
-                },
-                {
-                    background: '#00F',
-                    width: 35,
-                }
-            ]
-        },
-        {
-            background: '#CDCDCD',
-            updateTime: 200,
-            elements: [
-                {
-                    background: '#0022F',
-                    width: 25,
-                },
-                {
-                    background: '#11001F',
-                    width: 50,
-                },
-                {
-                    background: '#00GGFF',
-                    width: 25,
-                }
-            ]
-        },
-        {
-            background: '#CDCDCD',
-            updateTime: 700,
-            elements: [
-                {
-                    background: '#0022F',
-                    width: 25,
-                },
-                {
-                    background: '#11001F',
-                    width: 50,
-                },
-                {
-                    background: '#00GGFF',
-                    width: 25,
-                }
-            ]
-        },
-        {
-            background: '#000000',
-            updateTime: 900,
-            elements: [
-                {
-                    background: '#000000',
-                    width: 15,
-                },
-                {
-                    background: '#CDCDCD',
-                    width: 50,
-                },
-                {
-                    background: '#00F',
-                    width: 35,
-                }
-            ]
-        },
-        {
-            background: '#CDCDCD',
-            updateTime: 1500,
-            elements: [
-                {
-                    background: '#0022F',
-                    width: 25,
-                },
-                {
-                    background: '#11001F',
-                    width: 50,
-                },
-                {
-                    background: '#00GGFF',
-                    width: 25,
-                }
-            ]
-        },
-        {
-            background: '#CDCDCD',
-            updateTime: 700,
-            elements: [
-                {
-                    background: '#0022F',
-                    width: 25,
-                },
-                {
-                    background: '#11001F',
-                    width: 50,
-                },
-                {
-                    background: '#00GGFF',
-                    width: 25,
-                }
-            ]
-        },
-        {
-            background: '#000000',
-            updateTime: 900,
-            elements: [
-                {
-                    background: '#000000',
-                    width: 15,
-                },
-                {
-                    background: '#CDCDCD',
-                    width: 50,
-                },
-                {
-                    background: '#00F',
-                    width: 35,
-                }
-            ]
-        },
-        {
-            background: '#CDCDCD',
-            updateTime: 1500,
-            elements: [
-                {
-                    background: '#0022F',
-                    width: 25,
-                },
-                {
-                    background: '#11001F',
-                    width: 50,
-                },
-                {
-                    background: '#00GGFF',
-                    width: 25,
-                }
-            ]
-        },
-        {
-            background: '#CDCDCD',
-            updateTime: 700,
-            elements: [
-                {
-                    background: '#0022F',
-                    width: 25,
-                },
-                {
-                    background: '#11001F',
-                    width: 50,
-                },
-                {
-                    background: '#00GGFF',
-                    width: 25,
-                }
-            ]
-        },
-        {
-            background: '#000000',
-            updateTime: 90,
-            elements: [
-                {
-                    background: '#000000',
-                    width: 5,
-                },
-                {
-                    background: '#CDCDCD',
-                    width: 50,
-                },
-                {
-                    background: '#00F',
-                    width: 45,
-                }
-            ]
-        },
-        {
-            background: '#CDCDCD',
-            updateTime: 500,
             elements: [
                 {
                     background: '#0022F',
@@ -347,20 +95,14 @@ const createSubLine = (mainLine, subLine, time) => {
     subLineEl.style.backgroundColor = subLine.background;
     subLineEl.style.height = lineHeight+'px';
     subLineEl.style.display = 'inline-block';
-    subLineEl.innerHTML = '<span>Инжирчик</span>'
-    console.error( subLine)
     mainLine.appendChild(subLineEl);
     return changeColor(time, subLineEl)
     
 }
 const changeColor = (time, subLineEl) => {
-    console.error('--',time);
-    
-    const timerId = setInterval(function() {
+    setInterval(function() {
         subLineEl.style.backgroundColor = getRandomColor()
-      }, time);
+    }, time);
 }
 
-
-params.lines.map(line=>createLine(line));
-
+params.lines.map((line) => createLine(line));
